@@ -3,23 +3,23 @@ import java.util.Arrays;
 public class Class {
 
 
-   private int num;
+   private int number;
    private String word;
-   private int[]number;
+   private int[]array;
 
 
-    public Class(int num, String word, int[] number) {
-        this.num = num;
-        this.word = word;
+    public Class(int number, String word, int[] array) {
         this.number = number;
+        this.word = word;
+        this.array = array;
     }
 
     @Override
     public String toString() {
         return "Class{" +
-                "num=" + num +
+                "number =" + number +
                 ", word='" + word + '\'' +
-                ", number=" + Arrays.toString(number) +
+                ", array=" + Arrays.toString(array) +
                 '}';
     }
 }
