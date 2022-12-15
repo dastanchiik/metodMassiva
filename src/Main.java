@@ -1,12 +1,8 @@
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
-    public static void main(String[] args) {
-        for (int i = 1; i <= ints().length; i++) {
-            System.out.print(i+",");
-        }
-    }
-    public static int[] ints(){
-        return new int[]{1,2,3,4,5};
+    public static void main(String[] args) throws InterruptedException {
+       Scanner scanner = new Scanner(System.in);
     }
 }
