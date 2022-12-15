@@ -3,7 +3,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
+        method();
+    }
+    public static void method(){
         Scanner scanner1 = new Scanner(System.in);
         Scanner scanner = new Scanner(System.in);
         List<People> people = new ArrayList<>();
