@@ -2,18 +2,18 @@ import java.util.List;
 
 public class Car implements CarId{
 private String mark;
-private int nomer;
+private int number;
 
-    public Car(String mark, int nomer) {
+    public Car(String mark, int number) {
         this.mark = mark;
-        this.nomer = nomer;
+        this.number = number;
     }
 
     @Override
     public String toString() {
         return "Car{" +
                 "mark='" + mark + '\'' +
-                ", nomer='" + nomer + '\''+'}';
+                ", nomer='" + number + '\''+'}';
     }
 
     public String getMark() {
@@ -24,12 +24,12 @@ private int nomer;
         this.mark = mark;
     }
 
-    public int getNomer() {
-        return nomer;
+    public int getNumber() {
+        return number;
     }
 
-    public void setNomer(int nomer) {
-        this.nomer = nomer;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     @Override
