@@ -13,7 +13,7 @@ private int nomer;
     public String toString() {
         return "Car{" +
                 "mark='" + mark + '\'' +
-                ", nomer='" + nomer + '\'';
+                ", nomer='" + nomer + '\''+'}';
     }
 
     public String getMark() {

@@ -27,7 +27,7 @@ public class People implements CarId{
 
     @Override
     public String toString() {
-        return "People" +
+        return "People{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
