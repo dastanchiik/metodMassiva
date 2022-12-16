@@ -1,4 +1,6 @@
-public class People {
+import java.util.List;
+
+public class People implements CarId{
     private String name;
     private int age;
 
@@ -29,5 +31,25 @@ public class People {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public Car save(Car car) {
+        return null;
+    }
+
+    @Override
+    public void deleteCar(int a) {
+
+    }
+
+    @Override
+    public Car getUserId(int a) {
+        return null;
+    }
+
+    @Override
+    public List<Car> getAll() {
+        return null;
     }
 }
