@@ -21,7 +21,7 @@ public class Main {
                 People people1 = new People(name, age);
                 System.out.println(people1);
                 people.add(people1);
-                System.out.println("1)Ведите данные" + "\n" + "2)удаление данных" + "\n" + "3)удалить все" + "\n" + "4)вывод");
+                System.out.println("1 -> Ведите данные" + "\n" + "2 -> удаление данных" + "\n" + "3 -> удалить все" + "\n" + "4 -> вывод");
                 a = scanner.nextInt();
             }
             if (a == 2) {
@@ -40,7 +40,7 @@ public class Main {
             }
             if (a == 4) {
                 System.out.println("\n" + people);
-                System.out.println("1)Ведите данные" + "\n" + "2)удаление данных" + "\n" + "3)удалить все" + "\n" + "4)вывод");
+                System.out.println("1 -> Ведите данные" + "\n" + "2 -> удаление данных" + "\n" + "3 -> удалить все" + "\n" + "4 -> вывод");
                 a = scanner.nextInt();
             }
         }
