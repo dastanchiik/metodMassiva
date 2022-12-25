@@ -1,23 +1,19 @@
 package codewars;
 
-
-import java.nio.CharBuffer;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Master {
     public static void main(String[] args) {
-        method("Dastan", "fan");
+        Scanner scanner = new Scanner(System.in);
+        method("Dastan", "tan");
     }
 
-    public static void method(String str, String ending) {
+    public static void method(String stres, String endin) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(str + "\n" + ending);
-        int st = ending.length();
-        int count = st - 1;
-        int counter = st - count;
-        String string = str.substring(st);
-        if (ending.equals(string)) {
+        String str = scanner.next();
+        String ending = scanner.next();
+        String expected = str.substring(ending.length()-1);
+        if (ending.equals(expected)) {
             System.out.println("true");
         } else {
             System.out.println("false");
