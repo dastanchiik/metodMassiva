@@ -24,8 +24,8 @@ public class Master {
                 System.out.println("Cats in group");
                 System.out.println(groupCats.contains(e));
                 System.out.println(groupCats.indexOf(e));
-            } else if (e.getName().equals("Sima") && e.getAge()==1) {
-
+//            } else if (e.getName().equals("Sima") && e.getAge()==1) {
+//
             }
         }
     }
