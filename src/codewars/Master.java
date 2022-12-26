@@ -1,7 +1,6 @@
 package codewars;
-
-import java.nio.file.FileSystemNotFoundException;
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Master {
@@ -10,23 +9,19 @@ public class Master {
     }
 
     public static void method() {
+        Random ran = new Random();
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Cat>groupCats = new ArrayList<>();
-        groupCats.add(new Cat("Borya",3));
-        groupCats.add(new Cat("Sima",1));
-        groupCats.add(new Cat("Netflix",2));
-        System.out.print("Enter name:");
-        String name = scanner.next();
-        System.out.print("Enter age:");
-        int age = scanner.nextInt();
-        for (Cat e:groupCats) {
-            if (e.getAge()==age && e.getName().equals(name)){
-                System.out.println("Cats in group");
-                System.out.println(groupCats.contains(e));
-                System.out.println(groupCats.indexOf(e));
-//            } else if (e.getName().equals("Sima") && e.getAge()==1) {
-//
+        LinkedList<Integer>cat = new LinkedList<>();
+        LinkedList<Integer>dogs = new LinkedList<>();
+        int random = ran.nextInt(1,7);
+        dogs.add(random);
+        System.out.println(random);
+
+        int b = 0;
+        for (int i = 1; i <50 ; i++) {
+           int r = ran.nextInt(1,7);
+            dogs.add(r);
+        }
+        System.out.println("finish");
             }
         }
-    }
-}

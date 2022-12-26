@@ -1,12 +1,11 @@
 package codewars;
 
-public class Cat {
+public class Dog {
     private int age;
 
-    public Cat(int age) {
+    public Dog(int age) {
         this.age = age;
     }
-
 
     public int getAge() {
         return age;
@@ -18,7 +17,8 @@ public class Cat {
 
     @Override
     public String toString() {
-        return "Cat:" +
-                ", age=" + age;
+        return "Dog{" +
+                "age=" + age +
+                '}';
     }
 }
