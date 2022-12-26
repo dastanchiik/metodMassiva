@@ -1,11 +1,19 @@
 package codewars;
 
-public class Dog {
+public class Mouse {
     private String name;
     private int age;
 
-    public Dog(String name, int age) {
+    public Mouse(String name,int age) {
         this.name = name;
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -17,19 +25,11 @@ public class Dog {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     @Override
     public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
+        return "Mouse{" +
+                ", name='" + name + '\'' +
+                "age=" + age +
                 '}';
     }
 }
