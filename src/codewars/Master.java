@@ -49,13 +49,6 @@ public class Master {
                Object d = allLinked.add(mouse);
                dogs.add(mouse);
            }
-//           int randoms = ran.nextInt(50);
-//           Cat cat2 = new Cat(catsName[randoms],r);
-//           Dog dog1 = new Dog(catsName[randoms],r);
-//           all.add(cat2.getAge());
-//           all.add(dog1.getAge());
-//           dogs.add(dog1);
-//            cat.add(cat2);
         }
         cat.set(4,"cat delete");
         System.out.println(cat+"\n"+dogs+"\n");
