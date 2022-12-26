@@ -1,7 +1,5 @@
 package codewars;
-import java.util.LinkedList;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Master {
     public static void main(String[] args) {
@@ -19,30 +17,44 @@ public class Master {
         Scanner scanner = new Scanner(System.in);
         LinkedList<Object>cat = new LinkedList<>();
         LinkedList<Object>dogs = new LinkedList<>();
+        LinkedList<Integer>all = new LinkedList<>();
+        ArrayList<Object>allLinked = new ArrayList<>();
         int random = ran.nextInt(1,7);
         int megaRan = ran.nextInt(50);
         Cat cat1 = new Cat(catsName[megaRan],random );
         Dog dog = new Dog(catsName[megaRan],random );
+        all.add(dog.getAge());
+        all.add(cat1.getAge());
         cat.add(cat1);
         dogs.add(dog);
+        allLinked.addAll(cat);
+        allLinked.addAll(dogs);
         for (int i = 1; i < 10 ; i++) {
            int r = ran.nextInt(1,7);
            if (i%3==0){
                int superRan = ran.nextInt(1,7);
                int nameCats = ran.nextInt(50);
                Mouse mouse = new Mouse(catsName[nameCats], superRan);
+               all.add(mouse.getAge());
+               Object d = allLinked.add(mouse);
                dogs.add(mouse);
            }
            int randoms = ran.nextInt(50);
            Cat cat2 = new Cat(catsName[randoms],r);
            Dog dog1 = new Dog(catsName[randoms],r);
-            dogs.add(dog1);
+           all.add(cat2.getAge());
+           all.add(dog1.getAge());
+           dogs.add(dog1);
             cat.add(cat2);
-            if (i==4){
-                dogs.poll();
-            }
         }
+        cat.set(4,"cat delete");
         System.out.println(cat+"\n"+dogs);
-        System.out.println("finish");
+        int sum = 0;
+        for (Integer e:all) {
+        sum+=e;
+        }
+        LinkedList<Object> objects = new LinkedList<>(allLinked);
+        System.out.println(objects);
+            System.out.println("sum all age:"+sum);
             }
         }
