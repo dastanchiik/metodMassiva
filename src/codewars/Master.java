@@ -15,10 +15,10 @@ public class Master {
                 "Dusty","Leo","Noodle","Panda","Peaches"};
         Random ran = new Random();
         Scanner scanner = new Scanner(System.in);
-        LinkedList<Object>cat = new LinkedList<>();
-        LinkedList<Object>dogs = new LinkedList<>();
-        LinkedList<Integer>all = new LinkedList<>();
-        LinkedList<Object>allLinked = new LinkedList<>();
+        List<Object>cat = new LinkedList<>();
+        List<Object>dogs = new LinkedList<>();
+        List<Integer>all = new LinkedList<>();
+        List<Object>allLinked = new ArrayList<>();
         int random = ran.nextInt(1,7);
         int megaRan = ran.nextInt(50);
         Cat cat1 = new Cat(catsName[megaRan],random );
@@ -39,8 +39,8 @@ public class Master {
                int nameCats = ran.nextInt(50);
                Mouse mouse = new Mouse(catsName[nameCats], superRan);
                all.add(mouse.getAge());
-               int p = (int)allLinked.getLast();
-               allLinked.set(p,mouse);
+               int y = allLinked.lastIndexOf(dogs);
+               allLinked.add(y,mouse);
                //allLinked.add(mouse);
                dogs.add(mouse);
            }
