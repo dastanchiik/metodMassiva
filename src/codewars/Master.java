@@ -18,7 +18,7 @@ public class Master {
         LinkedList<Object>cat = new LinkedList<>();
         LinkedList<Object>dogs = new LinkedList<>();
         LinkedList<Integer>all = new LinkedList<>();
-        ArrayList<Object>allLinked = new ArrayList<>();
+        LinkedList<Object>allLinked = new LinkedList<>();
         int random = ran.nextInt(1,7);
         int megaRan = ran.nextInt(50);
         Cat cat1 = new Cat(catsName[megaRan],random );
@@ -32,6 +32,18 @@ public class Master {
             all.add(dog1.getAge());
             dogs.add(dog1);
             cat.add(cat2);
+
+        //for (int i = 1; i < 10 ; i++) {
+           if (i%3==0){
+               int superRan = ran.nextInt(1,7);
+               int nameCats = ran.nextInt(50);
+               Mouse mouse = new Mouse(catsName[nameCats], superRan);
+               all.add(mouse.getAge());
+               int p = (int)allLinked.getLast();
+               allLinked.set(p,mouse);
+               //allLinked.add(mouse);
+               dogs.add(mouse);
+           }
         }
             all.add(dog.getAge());
         all.add(cat1.getAge());
@@ -40,16 +52,6 @@ public class Master {
         allLinked.addAll(cat);
         allLinked.add("\n");
         allLinked.addAll(dogs);
-        for (int i = 1; i < 10 ; i++) {
-           if (i%3==0){
-               int superRan = ran.nextInt(1,7);
-               int nameCats = ran.nextInt(50);
-               Mouse mouse = new Mouse(catsName[nameCats], superRan);
-               all.add(mouse.getAge());
-               Object d = allLinked.add(mouse);
-               dogs.add(mouse);
-           }
-        }
         cat.set(4,"cat delete");
         System.out.println(cat+"\n"+dogs+"\n");
         int sum = 0;
