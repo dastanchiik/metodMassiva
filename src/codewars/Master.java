@@ -19,6 +19,7 @@ public class Master {
         List<Object>dogs = new LinkedList<>();
         List<Integer>all = new LinkedList<>();
         List<Object>allLinked = new ArrayList<>();
+        List<Object>mousy = new LinkedList<>();
         int random = ran.nextInt(1,7);
         int megaRan = ran.nextInt(50);
         Cat cat1 = new Cat(catsName[megaRan],random );
@@ -38,10 +39,8 @@ public class Master {
                int superRan = ran.nextInt(1,7);
                int nameCats = ran.nextInt(50);
                Mouse mouse = new Mouse(catsName[nameCats], superRan);
+               mousy.add(mouse);
                all.add(mouse.getAge());
-               int y = allLinked.lastIndexOf(dogs);
-               allLinked.add(y,mouse);
-               //allLinked.add(mouse);
                dogs.add(mouse);
            }
         }
@@ -60,6 +59,6 @@ public class Master {
         }
             System.out.println("sum all age:"+sum+"\n");
         LinkedList<Object> objects = new LinkedList<>(allLinked);
-        System.out.println(objects);
+        System.out.println(objects+"\n"+mousy);
             }
         }
